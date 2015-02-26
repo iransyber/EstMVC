@@ -1,0 +1,19 @@
+@model IEnumerable<EstudoMVCC.Models.BancosClasse>
+@{
+    ViewBag.Title = "ListarBancos";
+}
+
+<h2>ListarBancos</h2>
+
+<table>
+    <tr>
+        <td>Banco</td>
+    </tr>
+   @foreach(var Ls in Model)
+   {
+     <tr>
+        <td>@Ls.Nome_Banco</td>
+
+    </tr>
+   }
+</table>
