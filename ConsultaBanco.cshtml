@@ -1,0 +1,17 @@
+@model EstudoMVCC.Models.BancosClasse
+@{
+    ViewBag.Title = "ConsultarBanco";
+}
+
+<h2>ConsultarBanco</h2>
+
+<div>
+    @using (Html.BeginForm("ListarBancos", "Geral", FormMethod.Post))
+    {
+        <div>
+            @Html.TextBox("Nome")
+        </div>
+        
+        <input type="submit" value="Consultar"/>
+    }
+</div>
